@@ -323,6 +323,7 @@ a:active {
     max-width: 470px;
     background: var(--Light-Grey, #F9F9F9);
     display: flex;
+    justify-content: space-between;
 }
 
 .search-form {
