@@ -319,7 +319,7 @@ a:active {
 }
 
 .join-form {
-    margin: 0 auto;
+    align-items: center;
     max-width: 470px;
     background: var(--Light-Grey, #F9F9F9);
     display: flex;
@@ -351,6 +351,7 @@ a:active {
 
 .studio-card {
     max-width: 536px;
+    margin-right: 24px;
 }
 
 .studio-title {
@@ -460,6 +461,10 @@ a:active {
     background: var(--White, #FFF);
     padding: 16px 32px;
     border: none;
+}
+
+.search-btn {
+    margin-right: 24px;
 }
 
 .footer-ul>li {

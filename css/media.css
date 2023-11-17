@@ -129,9 +129,7 @@
   }
 
   .join-form {
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 10px;
+    align-items: center;
   }
 
   .studio-cards {
