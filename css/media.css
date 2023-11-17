@@ -6,8 +6,10 @@
 
   .chair-card {
     max-width: 100%;
-    padding: 40px 24px 24px 24px;
     position: relative;
+    padding: 0px;
+    margin-left: 24px;
+    margin-top: 40px;
   }
 
   .chair-img {
@@ -15,21 +17,24 @@
   }
 
   .chair-title {
-    width: 340px;
+    display: block;
+    max-width: 340px;
     margin-bottom: 80px;
   }
 
   .text-chair {
-    width: 340px;
+    display: block;
+    max-width: 340px;
     margin-bottom: 100px;
   }
 
   .btn-chair {
     position: absolute;
     margin-bottom: 0px;
-    top: 434px;
-    width: 340px;
+    left: 80px;
+    top: 380px;
     display: block;
+    max-width: 340px;
     text-align: center;
   }
 
@@ -160,18 +165,19 @@
   }
 
   .studio-img {
-    width: 400px;
     height: 358px;
     flex-shrink: 0;
     margin-left: 0px;
-    padding-bottom: 246px;
+    padding-bottom: 271px;
+    max-width: 100%;
   }
 
   .footer-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 100px;
+    grid-gap: 10px;
     margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .footer-card {
@@ -208,7 +214,7 @@
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.15);
     align-items: center;
-    width: 342px;
+    max-width: 342px;
     margin-left: 24px;
   }
 
