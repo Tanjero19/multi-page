@@ -1,288 +1,488 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="ClashDisplay_Complete/Fonts/WEB/css/clash-display.css">
-    <link rel="stylesheet" href="Satoshi_Complete/Fonts/WEB/css/satoshi.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/script.js" defer></script>
-</head>
+html,
+body {
+    height: 100%;
+}
 
-<body>
+body {
+    background-color: var(--White, #FFF);
 
-    <div class="wrapper">
-        <div class="content">
-            <header class="header">
-                <nav class="nav-bar1">
-                    <img class="header-icon" src="icons/Search.png" alt="">
-                    <h1 class="header-title">Avion</h1>
-                    <div>
-                        <img class="header-icon" src="icons/Shopping_cart.png" alt="">
-                        <img class="header-icon" src="icons/User--avatar.png" alt="">
-                    </div>
-                </nav>
+}
 
-                <img class="header-img" src="icons/Divider.png" alt="">
+a {
+    text-decoration: none;
+}
 
-                <nav class="nav-bar2">
-                    <ul class="flex">
-                        <li>
-                            <a class="header-link" href="">Plant pots</a>
-                        </li>
-                        <li>
-                            <a class="header-link" href="">Ceramics</a>
-                        </li>
-                        <li>
-                            <a class="header-link" href="">Tables</a>
-                        </li>
-                        <li>
-                            <a class="header-link" href="">Chairs</a>
-                        </li>
-                        <li>
-                            <a class="header-link" href="">Crockery</a>
-                        </li>
-                        <li>
-                            <a class="header-link" href="">Tableware</a>
-                        </li>
-                        <li>
-                            <a class="header-link" href="">Cutlery</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+h1,
+h2,
+h3 {
+    font-family: 'ClashDisplay-Regular';
+}
 
-            <main class="main">
-                <section class="chair">
-                    <div class="chair-brand">
-                        <div class="chair-card">
-                            <h2 class="chair-title">The furniture brand for the future, with timeless designs</h2>
-                            <button class="btn-chair">
-                                <p class="btn-chair_text">View collection</p>
-                            </button>
-                            <p class="text-chair">
-                                A new era in eco friendly furniture with Avelon, the French luxury retail brand
-                                with nice fonts, tasteful colors and a beautiful way to display things digitally
-                                using modern web technologies.
-                            </p>
-                        </div>
-                        <img class="chair-img" src="img/chair_image.png" alt="">
-                    </div>
-                </section>
+p,
+a {
+    font-family: 'Satoshi-Regular';
+}
 
-                <section class="brand">
-                    <div class="container">
-                        <h2 class="brand-title">What makes our brand different</h2>
-                        <div class="brand-cards">
+a:focus,
+a:active {
+    outline: none
+}
 
-                            <div class="brand-card">
-                                <img class="brand-img" src="icons/Delivery.png" alt="">
-                                <h2 class="brand-card_title">Next day as standard</h2>
-                                <p class="brand-text">
-                                    Order before 3pm and get your order
-                                    the next day as standard
-                                </p>
-                            </div>
-                            <div class="brand-card">
-                                <img class="brand-img" src="icons/Checkmark--outline.svg" alt="">
-                                <h2 class="brand-card_title">Made by true artisans</h2>
-                                <p class="brand-text">
-                                    Handmade crafted goods made with
-                                    real passion and craftmanship
-                                </p>
-                            </div>
-                            <div class="brand-card">
-                                <img class="brand-img" src="icons/Purchase.svg" alt="">
-                                <h2 class="brand-card_title">Unbeatable prices</h2>
-                                <p class="brand-text">
-                                    For our materials and quality you won’t find better prices anywhere
-                                </p>
-                            </div>
-                            <div class="brand-card">
-                                <img class="brand-img" src="icons/Sprout.svg" alt="">
-                                <h2 class="brand-card_title">Recycled packaging</h2>
-                                <p class="brand-text">
-                                    We use 100% recycled packaging to ensure our footprint is manageable
-                                </p>
-                            </div>
+.header {
+    padding: 20px;
+}
 
-                        </div>
-                    </div>
-                </section>
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
-                <section class="ceramics">
-                    <div class="container">
-                        <h2 class="ceramics-main-title">New ceramics</h2>
-                        <div class="ceramics-cards">
-                            <div class="ceramics-card">
-                                <img class="ceramics-img" src="img/chair_img.png" alt="">
-                                <h3 class="ceramics-title">The Dandy chair</h3>
-                                <p class="ceramics-text">£250</p>
-                            </div>
-                            <div class="ceramics-card">
-                                <img class="ceramics-img" src="img/vase_img.png" alt="">
-                                <h3 class="ceramics-title">Rustic Vase Set</h3>
-                                <p class="ceramics-text">£155</p>
-                            </div>
-                            <div class="ceramics-card">
-                                <img class="ceramics-img" src="img/skily_vase.png" alt="">
-                                <h3 class="ceramics-title">The Silky Vase</h3>
-                                <p class="ceramics-text">£125</p>
-                            </div>
-                            <div class="ceramics-card">
-                                <img class="ceramics-img" src="img/lamp_img.png" alt="">
-                                <h3 class="ceramics-title">The Lucy Lamp</h3>
-                                <p class="ceramics-text">£399</p>
-                            </div>
-                        </div>
-                        <button class="ceramics-btn">
-                            <p class="ceramics-btn_text">View collection</p>
-                        </button>
-                    </div>
-                </section>
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
-                <section class="products">
-                    <div class="container">
-                        <h2 class="products-title">Our popular products</h2>
-                        <div class="products-cards">
-                            <div class="products-card">
-                                <img class="products-img" src="img/Large.png" alt="">
-                                <h3 class="products-title">The Poplar suede sofa</h3>
-                                <p class="products-text">£980</p>
-                            </div>
-                            <div class="products-card">
-                                <img class="products-img" src="img/chair_card_img.png" alt="">
-                                <h3 class="products-title">The Dandy chair</h3>
-                                <p class="products-text">£250</p>
-                            </div>
-                            <div class="products-card">
-                                <img class="products-img" src="img/chair_metal_card_img.png" alt="">
-                                <h3 class="products-title">The Dandy chair</h3>
-                                <p class="products-text">£250</p>
-                            </div>
-                        </div>
-                        <button class="ceramics-btn mb-170  ceramics-btn_margin">
-                            <p class="ceramics-btn_text">View collection</p>
-                        </button>
-                    </div>
-                </section>
+.nav-bar1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
-                <section class="input_join">
-                    <h2 class="join-title">Join the club and get the benefits</h2>
-                    <p class="join-text">
-                        Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores
-                        and
-                        more
-                    </p>
+.header-title {
+    color: #22202E;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-                    <div class="join-form">
-                        <input id="inp_join" class="search-form search-text" type="text" placeholder="your@email.com">
-                        <button class="search-btn">
-                            <p class="search-btn-text">Sign up</p>
-                        </button>
-                    </div>
+.flex {
+    display: flex;
+}
 
-                </section>
+.header-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
 
-                <section class="studio">
+.header-icon:last-child {
+    margin-right: 0px;
+}
 
-                    <div class="studio-cards">
+.header-link {
+    color: #726E8D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
-                        <div class="studio-card">
+.nav-bar2 {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
-                            <h2 class="studio-title">
-                                From a studio in London to a global brand with over 400 outlets
-                            </h2>
-                            <p class="studio-text">
-                                When we started Avion, the idea was simple. Make high quality furniture affordable
-                                and
-                                available for the mass market.
-                            <p class="studio-text"> Handmade, and lovingly crafted furniture and homeware
-                                is what
-                                we live, breathe and design so our Chelsea boutique become the hotbed for the London
-                                interior design community.
-                                available for the mass market.
-                            </p>
-                            </p>
-                            <button class="studio-btn">Get in touch</button>
-                        </div>
+.flex>li {
+    margin-left: 44px;
+}
 
-                        <img class="studio-img" src="img/studio_img.png" alt="">
+.flex>li:first-child {
+    margin-left: 0px;
+}
 
-                    </div>
+.header-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
 
-                </section>
-            </main>
-        </div>
+.chair-brand {
+    background: var(--Dark-Primary, #2A254B);
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
 
-        <div class="footer">
+.chair-card {
+    max-width: 100%;
+    padding: 60px;
+}
 
-            <div class="footer-cards container">
-                <div class="footer-card footer-card_one">
-                    <ul class="footer-ul">
-                        <li><a class="footer-link" href="">Menu</a></li>
-                        <li><a class="footer-link" href="">New arrivals</a></li>
-                        <li><a class="footer-link" href="">Best sellers</a></li>
-                        <li><a class="footer-link" href="">Recently viewed</a></li>
-                        <li><a class="footer-link" href="">Popular this week</a></li>
-                        <li><a class="footer-link" href="">All products</a></li>
-                    </ul>
-                </div>
+.chair-title {
+    color: var(--White, #FFF);
+    max-width: 513px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 41px;
+}
 
-                <div class="footer-card footer-card_two">
-                    <ul class="footer-ul">
-                        <li><a class="footer-link" href="">Categories</a></li>
-                        <li><a class="footer-link" href="">Crockery</a></li>
-                        <li><a class="footer-link" href="">Furniture</a></li>
-                        <li><a class="footer-link" href="">Homeware</a></li>
-                        <li><a class="footer-link" href="">Homeware</a></li>
-                        <li><a class="footer-link" href="">Chairs</a></li>
-                        <li><a class="footer-link" href="">Crockery</a></li>
-                    </ul>
-                </div>
+.btn-chair {
+    background: rgba(249, 249, 249, 0.15);
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 195px;
+    border: none;
+}
 
-                <div class="footer-card footer-card_three">
-                    <ul class="footer-ul">
-                        <li><a class="footer-link" href="">Our company</a></li>
-                        <li><a class="footer-link" href="">About us</a></li>
-                        <li><a class="footer-link" href="">Vacancies</a></li>
-                        <li><a class="footer-link" href="">Contact us</a></li>
-                        <li><a class="footer-link" href="">Privacy</a></li>
-                        <li><a class="footer-link" href="">Returns policy</a></li>
-                    </ul>
-                </div>
+.text-chair {
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
 
-                <div class="footer-card-img">
-                    <h2 class="footer-title">Join our mailing list</h2>
-                    <div class="footer-form">
-                        <input id="inp_footer" class="search-form_footer" type="text" placeholder="your@email.com">
-                        <button class="search-btn_footer">Sign up</button>
-                    </div>
-                </div>
-            </div>
+.btn-chair_text {
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
 
-            <div class="footer-card-media">
-                <h2 class="footer-title-media">Join our mailing list</h2>
-                <div class="footer-form-media">
-                    <input class="search-form-media" type="text" placeholder="your@email.com">
-                    <button class="search-btn-media">Sign up</button>
-                </div>
-            </div>
+.chair {
+    margin: 60px 0px;
+}
 
-            <div class="container">
-                <img class="footer-line" src="img/Line 11.png" alt="">
-            </div>
-            <div class="footer-nav container">
-                <a class="link-footer" href="">Copyright 2022 Avion LTD</a>
-            </div>
-        </div>
-    </div>
+.brand-title {
+    text-align: center;
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 50px;
+}
 
-</body>
+.brand-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 166px;
+}
 
-</html>
+.brand-card {
+    width: 270px;
+}
+
+.brand-img {
+    margin-bottom: 16px;
+}
+
+.brand-card_title {
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 8px;
+}
+
+.brand-text {
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.ceramics-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 35px;
+}
+
+.ceramics-img {
+    margin-bottom: 24px;
+}
+
+.ceramics-main-title {
+    margin-bottom: 33px;
+    color: #2A254B;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.ceramics-title {
+    margin-bottom: 8px;
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.ceramics-text {
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.ceramics-btn {
+    margin: 0 auto;
+    display: block;
+    background: var(--Light-Grey, #F9F9F9);
+    padding: 16px 32px;
+    gap: 10px;
+    margin-bottom: 120px;
+    border: none;
+}
+
+.ceramics-btn_text {
+    color: #2A254B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.products-title {
+    color: #2A254B;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+
+.products-cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.products-img {
+    margin-bottom: 24px;
+}
+
+.products-text {
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.mb-170 {
+    margin-bottom: 150px;
+}
+
+.join-title {
+    color: var(--Dark-Primary, #2A254B);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+.join-text {
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.search-text {
+    color: var(--Dark-Primary, #2A254B);
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.search-btn {
+    border: none;
+    background: var(--Dark-Primary, #2A254B);
+    padding: 16px 32px;
+    gap: 10px;
+}
+
+.input_join {
+    margin-bottom: 120px;
+}
+
+.search-btn-text {
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.join-form {
+    margin: 0 auto;
+    max-width: 470px;
+    background: var(--Light-Grey, #F9F9F9);
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form {
+    background: var(--Light-Grey, #F9F9F9);
+    border: none;
+    margin-left: 24px;
+}
+
+.search-form::placeholder {
+    color: var(--Dark-Primary, #2A254B);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bg-section {
+    background: var(--Light-Grey, #F9F9F9);
+}
+
+.studio-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.footer-card-img {
+    margin-left: 50px;
+}
+
+.studio-card {
+    max-width: 530px;
+}
+
+.studio-title {
+    color: #2A254B;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+
+.studio-text {
+    color: #505977;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.studio-text:last-child {
+    margin-bottom: 110px;
+}
+
+.studio-btn {
+    background: var(--Light-Grey, #F9F9F9);
+    padding: 16px 32px;
+    gap: 10px;
+    border: none;
+    margin-top: 200px;
+}
+
+.studio-img {
+    height: 500px;
+    max-width: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.content {
+    padding-bottom: 375px;
+}
+
+.footer {
+    background: var(--Dark-Primary, #2A254B);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-card-media {
+    visibility: hidden;
+}
+
+.footer-link {
+    color: var(--White, #FFF);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+
+.footer-title {
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.15);
+    align-items: center;
+    width: 510px;   
+}
+
+.search-form_footer {
+    background: none;
+    border: none;
+    margin-left: 32px;
+}
+
+.search-form_footer::placeholder {
+    color: #FFF;
+    color: var(--White, #FFF);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-text_footer {
+    color: var(--White, #FFF);
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-btn_footer {
+    background: var(--White, #FFF);
+    padding: 16px 32px;
+    border: none;
+}
+
+.footer-ul>li {
+    margin-bottom: 12px;
+}
+
+.footer-line {
+    max-width: 100%;
+    margin-bottom: 22px;
+}
+
+.link-footer {
+    color: var(--White, #FFF);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-nav {
+    margin-bottom: 25px;
+}
+
