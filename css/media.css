@@ -144,7 +144,6 @@
     width: 315px;
     background-color: red;
     background: var(--Light-Grey, #F9F9F9);
-    margin-left: 24px;
   }
 
   .studio-cards {
