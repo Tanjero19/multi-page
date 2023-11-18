@@ -22,6 +22,10 @@
     margin-bottom: 80px;
   }
 
+  .content {
+    padding-bottom: 600px;
+  }
+
   .text-chair {
     display: block;
     max-width: 340px;
@@ -126,10 +130,16 @@
 
   .ceramics-btn {
     margin-bottom: 70px;
+    margin-left: 24px;
   }
 
   .join-form {
-    align-items: center;
+    display: flex;
+    width: 342px;
+    
+    background-color: red;
+    background: var(--Light-Grey, #F9F9F9);
+    margin-left: 24px;
   }
 
   .studio-cards {
@@ -149,10 +159,12 @@
   .studio-text {
     margin-left: 24px;
     width: 342px;
+    display: block;
     color: #505977;
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+    align-items: center;
   }
 
   .studio-btn {
@@ -163,11 +175,7 @@
   }
 
   .studio-img {
-    height: 358px;
-    flex-shrink: 0;
-    margin-left: 0px;
-    padding-bottom: 271px;
-    max-width: 100%;
+    display: none;
   }
 
   .footer-cards {
@@ -219,7 +227,6 @@
   .search-form-media {
     background: none;
     border: none;
-    margin-left: 32px;
   }
 
   .search-btn-media::placeholder {
