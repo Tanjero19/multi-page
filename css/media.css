@@ -131,12 +131,12 @@
   .ceramics-btn {
     margin-bottom: 70px;
     margin-left: 24px;
-    width: 330px;
+    width: 310px;
   }
 
   .join-form {
     display: flex;
-    width: 315px;
+    max-width: 315px;
     background-color: red;
     background: var(--Light-Grey, #F9F9F9);
     margin-left: 24px;
@@ -220,13 +220,14 @@
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.15);
     align-items: center;
-    max-width: 342px;
+    max-width: 310px;
     margin-left: 24px;
   }
 
   .search-form-media {
     background: none;
     border: none;
+    margin-left: 24px;
   }
 
   .search-btn-media::placeholder {
