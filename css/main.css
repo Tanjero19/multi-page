@@ -298,7 +298,6 @@ a:active {
     color: var(--Dark-Primary, #2A254B);
     font-size: 16px;
     font-weight: 400;
-    margin-left: 24px;
     align-items: center;
 }
 
@@ -352,7 +351,6 @@ a:active {
 
 .studio-card {
     max-width: 536px;
-    margin-right: 24px;
 }
 
 .studio-title {
@@ -481,3 +479,4 @@ a:active {
 .footer-nav {
     margin-bottom: 25px;
 }
+
