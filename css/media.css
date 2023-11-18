@@ -125,7 +125,7 @@
   }
 
   .join-text {
-    margin-left: 24px;
+    text-align: left;
     width: 315px;
     color: var(--Dark-Primary, #2A254B);
     font-size: 14px;
@@ -141,9 +141,12 @@
 
   .join-form {
     display: flex;
-    width: 315px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 315px;
     background-color: red;
     background: var(--Light-Grey, #F9F9F9);
+    margin: 0 auto;
   }
 
   .studio-cards {
@@ -226,6 +229,12 @@
     border: none;
     margin-left: 24px;
   }
+
+  .search-btn {
+    border: none;
+    background: var(--Dark-Primary, #2A254B);
+    padding: 15px 20px;
+}
 
   .search-btn-media::placeholder {
     color: #FFF;
