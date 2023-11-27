@@ -234,7 +234,7 @@
     border: none;
     background: var(--Dark-Primary, #2A254B);
     padding: 15px 20px;
-}
+  }
 
   .search-btn-media::placeholder {
     color: #FFF;
@@ -261,5 +261,37 @@
     margin-bottom: 40px;
     margin-top: 60px;
 
+  }
+
+  .header-icon {
+    display: none;
+  }
+
+  .header-link {
+    color: #726E8D;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    padding-right: 10px;
+  }
+
+  .menu nav {
+    text-align: center;
+  }
+
+  .menu.active {
+    transform: translateX(0);
   }
 }
